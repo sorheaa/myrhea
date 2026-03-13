@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hubungi Kami — Precision Brass Craft</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=Noto+Sans+SC:wght@300;400;500&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .trust-strip{background:var(--olive-ultra);padding:52px 64px;border-top:1px solid var(--border-med);border-bottom:1px solid var(--border-med);}
+    .trust-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:40px;}
+    .trust-item{text-align:center;}
+    .trust-value{font-family:var(--font-serif);font-size:2.4rem;font-weight:700;color:var(--olive);margin-bottom:4px;}
+    .trust-label{font-size:0.68rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-muted);}
+    .faq-section{background:var(--cream);padding:100px 64px;}
+    .faq-inner{max-width:800px;margin:0 auto;}
+    .faq-item{border-bottom:1px solid var(--border-med);}
+    .faq-q{padding:22px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-size:0.96rem;color:var(--text-primary);transition:color var(--transition);}
+    .faq-q:hover{color:var(--olive);}
+    .faq-icon{color:var(--olive);transition:transform 0.3s;flex-shrink:0;margin-left:20px;}
+    .faq-a{max-height:0;overflow:hidden;transition:max-height 0.4s ease,padding 0.3s;}
+    .faq-a.open{max-height:220px;padding-bottom:22px;}
+    .faq-a p{font-size:0.86rem;color:var(--text-muted);line-height:1.8;}
+    .faq-item.active .faq-icon{transform:rotate(45deg);}
+    @media(max-width:1024px){.trust-inner{grid-template-columns:repeat(2,1fr);}}
+    @media(max-width:768px){.trust-strip,.faq-section{padding:40px 20px;}}
+  </style>
+</head>
+<body>
+<div class="cursor"></div><div class="cursor-follower"></div>
+<nav id="mainNav">
+  <a href="../index.html" class="nav-logo">
+    <span class="nav-logo-main">Precision Brass Craft</span>
+    <span class="nav-logo-sub" data-i18n="nav.tagline">Est. 2008 · Jakarta, Indonesia</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="../index.html" data-i18n="nav.home">Beranda</a></li>
+    <li><a href="hot-stamping.html" data-i18n="nav.hotStamp">Hot Stamping</a></li>
+    <li><a href="embossing.html" data-i18n="nav.embossing">Embossing</a></li>
+    <li><a href="kontak.html" class="nav-cta" data-i18n="nav.contact">Konsultasi</a></li>
+    <li class="lang-switcher">
+      <button class="lang-btn active" data-lang="id">ID</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="zh">中文</button>
+    </li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <div class="lang-switcher" id="mobileLang" style="display:none;">
+      <button class="lang-btn active" data-lang="id">ID</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="zh">中文</button>
+    </div>
+    <div class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="section-label" data-i18n="ct.page.label">Mulai Proyek</div>
+  <h1 class="section-title" data-i18n-html="ct.page.title">Konsultasi <em>Gratis,</em><br>Respon 24 Jam.</h1>
+  <p class="page-header-sub" data-i18n="ct.page.subtitle">Kirimkan file desain Anda. Tim engineer kami menganalisis dan memberikan rekomendasi teknis secara gratis.</p>
+</div>
+
+<div class="trust-strip">
+  <div class="trust-inner">
+    <div class="trust-item reveal"><div class="trust-value" data-target="24" data-suffix=" Jam">0</div><div class="trust-label" data-i18n="ct.trust1">Waktu Respons</div></div>
+    <div class="trust-item reveal reveal-delay-1"><div class="trust-value" data-target="500" data-suffix="+">0</div><div class="trust-label" data-i18n="ct.trust2">Proyek Selesai</div></div>
+    <div class="trust-item reveal reveal-delay-2"><div class="trust-value" data-target="100" data-suffix="%">0</div><div class="trust-label" data-i18n="ct.trust3">Kepuasan Klien</div></div>
+    <div class="trust-item reveal reveal-delay-3"><div class="trust-value" data-target="15" data-suffix=" Thn">0</div><div class="trust-label" data-i18n="ct.trust4">Pengalaman</div></div>
+  </div>
+</div>
+
+<section style="background:var(--white);">
+  <div class="contact-layout">
+    <div class="reveal">
+      <div class="section-label" style="margin-bottom:28px;" data-i18n="ct.info.label">Informasi Kontak</div>
+      <div class="contact-info-item">
+        <div class="contact-info-label" data-i18n="ct.info.phone">Telepon</div>
+        <div class="contact-info-value">+62 21 1234 5678<br>+62 812 3456 7890 (WhatsApp)</div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-info-label" data-i18n="ct.info.email">Email</div>
+        <div class="contact-info-value">info@precisionbrass.id<br>order@precisionbrass.id</div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-info-label" data-i18n="ct.info.address">Alamat Bengkel</div>
+        <div class="contact-info-value">Jl. Rawa Terate II No. 12<br>Kawasan Industri Pulogadung<br>Jakarta Timur 13930</div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-info-label" data-i18n="ct.info.hours">Jam Operasional</div>
+        <div class="contact-info-value" data-i18n-html="ct.info.hoursV">Senin — Jumat: 08.00 — 17.00 WIB<br>Sabtu: 08.00 — 13.00 WIB</div>
+      </div>
+      <div class="contact-info-item">
+        <div class="contact-info-label" data-i18n="ct.info.format">Format File Diterima</div>
+        <div class="contact-info-value" style="color:var(--olive);font-weight:500;">AI · CDR · DXF · EPS · PDF</div>
+      </div>
+      <div style="margin-top:28px;background:var(--olive-ultra);border:1px solid var(--border-med);padding:24px;text-align:center;">
+        <svg width="28" height="28" fill="none" stroke="var(--olive)" stroke-width="1.4" viewBox="0 0 24 24" style="margin:0 auto 10px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div style="font-size:0.78rem;color:var(--text-muted);">Kawasan Industri Pulogadung<br>Jakarta Timur</div>
+        <a href="https://maps.google.com" target="_blank" style="display:inline-block;margin-top:10px;font-size:0.63rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--olive);border-bottom:1px solid var(--border-med);padding-bottom:2px;" data-i18n="ct.map.link">Buka di Google Maps →</a>
+      </div>
+    </div>
+
+    <div class="reveal reveal-delay-1">
+      <div class="contact-form-title" data-i18n="ct.form.title">Ceritakan Proyek Anda</div>
+      <div class="contact-form-subtitle" data-i18n="ct.form.sub">Konsultasi awal sepenuhnya gratis. Tim engineer kami akan merespons dalam 24 jam kerja.</div>
+      <form id="contactForm">
+        <div class="form-grid">
+          <div class="form-group"><label class="form-label" data-i18n="ct.f.name">Nama Lengkap *</label><input class="form-input" type="text" data-i18n-attr="placeholder:ct.f.name" placeholder="Nama Lengkap" required></div>
+          <div class="form-group"><label class="form-label" data-i18n="ct.f.email">Alamat Email *</label><input class="form-input" type="email" placeholder="email@company.com" required></div>
+          <div class="form-group"><label class="form-label" data-i18n="ct.f.company">Nama Perusahaan *</label><input class="form-input" type="text" data-i18n-attr="placeholder:ct.f.company" placeholder="Nama Perusahaan" required></div>
+          <div class="form-group"><label class="form-label" data-i18n="ct.f.phone">Nomor Telepon</label><input class="form-input" type="tel" placeholder="+62 812 3456 7890"></div>
+          <div class="form-group full">
+            <label class="form-label" data-i18n="ct.f.service">Layanan yang Dibutuhkan</label>
+            <select class="form-input" style="cursor:pointer;">
+              <option value="" disabled selected data-i18n="ct.f.opt0">Pilih layanan...</option>
+              <option value="hot-stamping" data-i18n="ct.f.opt1">Hot Stamping</option>
+              <option value="embossing" data-i18n="ct.f.opt2">Embossing / Debossing</option>
+              <option value="kombinasi" data-i18n="ct.f.opt3">Kombinasi Hot Stamp + Emboss</option>
+              <option value="konsultasi" data-i18n="ct.f.opt4">Konsultasi Desain Saja</option>
+            </select>
+          </div>
+          <div class="form-group full"><label class="form-label" data-i18n="ct.f.notes">Catatan &amp; Kebutuhan Teknis</label><textarea class="form-textarea" data-i18n-attr="placeholder:ct.f.notesP" placeholder="Ceritakan detail proyek Anda..."></textarea></div>
+          <div class="form-group full">
+            <label class="form-label" data-i18n="ct.f.upload">Upload File Desain (Opsional)</label>
+            <div class="form-upload" onclick="document.getElementById('fileInput').click()">
+              <svg width="28" height="28" fill="none" stroke="var(--olive)" stroke-width="1.4" viewBox="0 0 24 24" style="margin:0 auto;"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              <div class="form-upload-text" data-i18n-html="ct.f.uploadT"><strong>Klik atau drag file ke sini</strong><br>Format: AI, CDR, DXF, EPS, PDF · Maks 50MB</div>
+              <input type="file" id="fileInput" style="display:none;" accept=".ai,.cdr,.dxf,.eps,.pdf">
+            </div>
+          </div>
+          <div class="form-submit-wrap full">
+            <button type="submit" class="btn-submit"><span data-i18n="ct.f.submit">Kirim &amp; Minta Analisis Gratis →</span></button>
+            <p style="font-size:0.7rem;color:var(--text-light);margin-top:12px;text-align:center;" data-i18n="ct.f.privacy">Data Anda aman bersama kami.</p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section">
+  <div class="faq-inner">
+    <div class="section-label reveal" style="margin-bottom:18px;" data-i18n="ct.faq.label">FAQ</div>
+    <h2 class="section-title reveal reveal-delay-1" style="margin-bottom:16px;" data-i18n-html="ct.faq.title">Pertanyaan yang <em>Sering</em> Ditanyakan.</h2>
+    <p class="section-subtitle reveal reveal-delay-2" style="margin-bottom:44px;" data-i18n="ct.faq.sub">Jawaban untuk pertanyaan teknis dan bisnis yang paling umum.</p>
+    <div class="faq-item reveal"><div class="faq-q" onclick="toggleFaq(this)"><span data-i18n="ct.q1">Format file apa yang Anda terima?</span><svg class="faq-icon" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p data-i18n="ct.a1">Kami menerima file vektor AI, CDR, DXF, EPS, dan PDF vektor.</p></div></div>
+    <div class="faq-item reveal reveal-delay-1"><div class="faq-q" onclick="toggleFaq(this)"><span data-i18n="ct.q2">Berapa minimum order untuk cetakan baru?</span><svg class="faq-icon" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p data-i18n="ct.a2">Tidak ada minimum order untuk pembuatan cetakan.</p></div></div>
+    <div class="faq-item reveal reveal-delay-2"><div class="faq-q" onclick="toggleFaq(this)"><span data-i18n="ct.q3">Berapa lama ketahanan cetakan kuningan CNC?</span><svg class="faq-icon" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p data-i18n="ct.a3">Tahan minimal 100.000 kesan tanpa degradasi kualitas.</p></div></div>
+    <div class="faq-item reveal reveal-delay-3"><div class="faq-q" onclick="toggleFaq(this)"><span data-i18n="ct.q4">Apakah bisa mengerjakan proyek dengan deadline singkat?</span><svg class="faq-icon" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p data-i18n="ct.a4">Tersedia layanan rush order 3–5 hari kerja.</p></div></div>
+    <div class="faq-item reveal reveal-delay-4"><div class="faq-q" onclick="toggleFaq(this)"><span data-i18n="ct.q5">Apakah ada biaya konsultasi desain?</span><svg class="faq-icon" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div><div class="faq-a"><p data-i18n="ct.a5">Tidak. Konsultasi desain, analisis file, dan rekomendasi teknis semuanya gratis.</p></div></div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div><div class="footer-brand-name">Precision Brass Craft</div><div class="footer-brand-tagline" data-i18n="footer.tagline">Dimana Seni Bertemu Presisi Mutlak</div><p class="footer-brand-desc" data-i18n="footer.desc">Manufaktur spesialis Hot Stamping dan Embossing sejak 2008.</p></div>
+    <div><div class="footer-col-title" data-i18n="footer.services">Layanan</div><ul class="footer-links"><li><a href="hot-stamping.html" data-i18n="nav.hotStamp">Hot Stamping</a></li><li><a href="embossing.html" data-i18n="nav.embossing">Embossing</a></li><li><a href="kontak.html" data-i18n="footer.consult">Konsultasi</a></li></ul></div>
+    <div><div class="footer-col-title" data-i18n="footer.company">Perusahaan</div><ul class="footer-links"><li><a href="../index.html" data-i18n="footer.home">Beranda</a></li><li><a href="kontak.html" data-i18n="footer.contactL">Kontak</a></li></ul></div>
+    <div><div class="footer-col-title" data-i18n="footer.contact">Hubungi Kami</div><div class="footer-contact-item"><svg class="footer-contact-icon" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.13 19.79 19.79 0 013 2.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><div class="footer-contact-text">+62 21 1234 5678</div></div><div class="footer-contact-item"><svg class="footer-contact-icon" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><div class="footer-contact-text">info@precisionbrass.id</div></div></div>
+  </div>
+  <div class="footer-bottom"><div class="footer-copy">© 2024 <span>Precision Brass Craft</span>. All rights reserved.</div><div class="footer-copy" data-i18n="footer.copy">Crafted with precision in Jakarta, Indonesia</div></div>
+</footer>
+<script src="../js/main.js"></script>
+<script src="../js/i18n.js"></script>
+<script>
+function toggleFaq(el){
+  const item=el.parentElement,answer=item.querySelector('.faq-a'),isOpen=item.classList.contains('active');
+  document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('active');i.querySelector('.faq-a').classList.remove('open');});
+  if(!isOpen){item.classList.add('active');answer.classList.add('open');}
+}
+if(window.innerWidth<=768)document.getElementById('mobileLang').style.display='flex';
+</script>
+</body></html>

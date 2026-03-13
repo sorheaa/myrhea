@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hot Stamping Kuningan CNC — Precision Brass Craft</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=Noto+Sans+SC:wght@300;400;500&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .service-feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:40px;}
+    .feature-item{padding:26px;border:1px solid var(--border);background:var(--cream);transition:border-color var(--transition),box-shadow var(--transition);}
+    .feature-item:hover{border-color:var(--border-med);box-shadow:var(--shadow-soft);}
+    .feature-icon{color:var(--olive);margin-bottom:14px;}
+    .feature-title{font-family:var(--font-serif);font-size:1.25rem;font-weight:700;margin-bottom:8px;color:var(--text-primary);}
+    .feature-text{font-size:0.82rem;color:var(--text-muted);line-height:1.72;}
+    .app-grid{display:grid;grid-template-columns:repeat(3,1fr);max-width:1200px;margin:56px auto 0;border:1px solid var(--border-med);}
+    .app-item{background:var(--white);padding:36px 30px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);transition:background var(--transition);}
+    .app-item:hover{background:var(--cream);}
+    .app-num{font-family:var(--font-serif);font-size:2.2rem;font-weight:700;color:var(--olive-pale);margin-bottom:10px;}
+    .app-title{font-family:var(--font-serif);font-size:1.2rem;font-weight:700;margin-bottom:8px;color:var(--text-primary);}
+    .app-text{font-size:0.8rem;color:var(--text-muted);line-height:1.72;}
+    @media(max-width:768px){.service-feature-grid,.app-grid{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+<div class="cursor"></div><div class="cursor-follower"></div>
+<nav id="mainNav">
+  <a href="../index.html" class="nav-logo">
+    <span class="nav-logo-main">Precision Brass Craft</span>
+    <span class="nav-logo-sub" data-i18n="nav.tagline">Est. 2008 · Jakarta, Indonesia</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="../index.html" data-i18n="nav.home">Beranda</a></li>
+    <li><a href="hot-stamping.html" data-i18n="nav.hotStamp">Hot Stamping</a></li>
+    <li><a href="embossing.html" data-i18n="nav.embossing">Embossing</a></li>
+    <li><a href="kontak.html" class="nav-cta" data-i18n="nav.contact">Konsultasi</a></li>
+    <li class="lang-switcher">
+      <button class="lang-btn active" data-lang="id">ID</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="zh">中文</button>
+    </li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <div class="lang-switcher" id="mobileLang" style="display:none;">
+      <button class="lang-btn active" data-lang="id">ID</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="zh">中文</button>
+    </div>
+    <div class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="section-label" data-i18n="hs.page.label">Layanan Unggulan</div>
+  <h1 class="section-title" data-i18n-html="hs.page.title">Hot <em>Stamping</em><br>Kuningan CNC</h1>
+  <p class="page-header-sub" data-i18n="hs.page.subtitle">Cetakan kuningan terukir presisi CNC untuk proses hot stamping foil.</p>
+</div>
+
+<section style="background:var(--white);">
+  <div class="service-content">
+    <div class="service-intro">
+      <div class="service-intro-visual reveal">
+        <div class="service-visual-box">
+          <div class="service-visual-inner" style="background:linear-gradient(160deg,var(--cream),var(--olive-ultra));">
+            <div style="position:relative;width:200px;height:200px;">
+              <div style="position:absolute;inset:0;border:1.5px solid var(--border-med);border-radius:2px;"></div>
+              <div style="position:absolute;inset:14px;border:1px solid var(--border);"></div>
+              <div style="position:absolute;inset:28px;background:repeating-linear-gradient(45deg,rgba(112,137,46,0.08) 0,rgba(112,137,46,0.08) 1px,transparent 1px,transparent 8px);"></div>
+              <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:72px;height:72px;background:radial-gradient(circle,var(--olive-muted) 0%,transparent 70%);border-radius:50%;opacity:0.6;"></div>
+              <div style="position:absolute;top:16px;left:16px;width:14px;height:14px;border-right:1px solid var(--olive-muted);border-bottom:1px solid var(--olive-muted);"></div>
+              <div style="position:absolute;top:16px;right:16px;width:14px;height:14px;border-left:1px solid var(--olive-muted);border-bottom:1px solid var(--olive-muted);"></div>
+              <div style="position:absolute;bottom:16px;left:16px;width:14px;height:14px;border-right:1px solid var(--olive-muted);border-top:1px solid var(--olive-muted);"></div>
+              <div style="position:absolute;bottom:16px;right:16px;width:14px;height:14px;border-left:1px solid var(--olive-muted);border-top:1px solid var(--olive-muted);"></div>
+            </div>
+          </div>
+        </div>
+        <div class="spec-table-wrap">
+          <table class="spec-table">
+            <thead><tr><th data-i18n="spec.param">Parameter</th><th data-i18n="spec.spec">Spesifikasi</th></tr></thead>
+            <tbody>
+              <tr><td>Toleransi Ukir</td><td>±0,01mm</td></tr>
+              <tr><td>Ukuran Maksimal</td><td>600 × 400mm</td></tr>
+              <tr><td>Kedalaman Ukir</td><td>0,2mm — 2,0mm</td></tr>
+              <tr><td>Material Cetakan</td><td>Kuningan H59 / H62</td></tr>
+              <tr><td>Kompatibel Foil</td><td>Emas, Perak, Holografik</td></tr>
+              <tr><td>Finishing</td><td>Mirror / Matte / Satin</td></tr>
+              <tr><td>Lead Time</td><td>5–10 hari kerja</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <div class="section-label reveal" data-i18n="hs.label">Apa itu Hot Stamping?</div>
+        <h2 class="section-title reveal reveal-delay-1" data-i18n-html="hs.title">Sentuhan Emas yang <em>Abadi.</em></h2>
+        <p class="section-subtitle reveal reveal-delay-1" data-i18n="hs.subtitle">Transfer foil metalik yang tak bisa ditiru oleh tinta manapun.</p>
+        <p class="reveal reveal-delay-2" style="color:var(--text-muted);font-size:0.92rem;line-height:1.88;margin-bottom:16px;" data-i18n="hs.p1">Hot Stamping adalah proses transfer foil metalik ke permukaan menggunakan tekanan panas.</p>
+        <p class="reveal reveal-delay-2" style="color:var(--text-muted);font-size:0.92rem;line-height:1.88;margin-bottom:16px;" data-i18n="hs.p2">Perbedaan kami: cetakan dikerjakan dengan mesin CNC 5-axis, bukan manual.</p>
+        <p class="reveal reveal-delay-2" style="color:var(--text-muted);font-size:0.92rem;line-height:1.88;" data-i18n-html="hs.p3">Cetakan kuningan CNC kami tahan hingga <strong style="color:var(--olive)">100.000+ kesan</strong>.</p>
+        <div class="service-feature-grid">
+          <div class="feature-item reveal reveal-delay-2">
+            <svg class="feature-icon" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <div class="feature-title" data-i18n="hs.f1.title">Foil Premium</div>
+            <div class="feature-text" data-i18n="hs.f1.text">Kompatibel dengan semua jenis foil premium.</div>
+          </div>
+          <div class="feature-item reveal reveal-delay-3">
+            <svg class="feature-icon" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div class="feature-title" data-i18n="hs.f2.title">Tahan Lama</div>
+            <div class="feature-text" data-i18n="hs.f2.text">Tahan 100.000+ kesan.</div>
+          </div>
+          <div class="feature-item reveal reveal-delay-2">
+            <svg class="feature-icon" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+            <div class="feature-title" data-i18n="hs.f3.title">Multi Material</div>
+            <div class="feature-text" data-i18n="hs.f3.text">Efektif pada kertas, kulit, kanvas, ABS, kayu.</div>
+          </div>
+          <div class="feature-item reveal reveal-delay-3">
+            <svg class="feature-icon" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            <div class="feature-title" data-i18n="hs.f4.title">Konsistensi Batch</div>
+            <div class="feature-text" data-i18n="hs.f4.text">Setiap kesan identik antar batch produksi.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--cream);padding:90px 64px;">
+  <div style="max-width:1200px;margin:0 auto;">
+    <div class="section-label reveal" style="justify-content:center;margin-bottom:14px;" data-i18n="hs.app.label">Aplikasi</div>
+    <h2 class="section-title reveal reveal-delay-1" style="text-align:center;margin-bottom:10px;" data-i18n-html="hs.app.title">Di Mana <em>Hot Stamping</em> Bersinar.</h2>
+    <p class="section-subtitle reveal reveal-delay-2" style="text-align:center;max-width:520px;margin:0 auto;" data-i18n="hs.app.subtitle">Dari packaging parfum hingga cover buku edisi terbatas.</p>
+  </div>
+  <div class="app-grid">
+    <div class="app-item reveal"><div class="app-num">01</div><div class="app-title" data-i18n="hs.a1.title">Kemasan Parfum &amp; Kosmetik</div><div class="app-text" data-i18n="hs.a1.text">Rigid box dengan foil emas untuk kesan premium instan.</div></div>
+    <div class="app-item reveal reveal-delay-1"><div class="app-num">02</div><div class="app-title" data-i18n="hs.a2.title">Cover Buku &amp; Agenda</div><div class="app-text" data-i18n="hs.a2.text">Foil pada cover kulit untuk edisi kolektor.</div></div>
+    <div class="app-item reveal reveal-delay-2"><div class="app-num">03</div><div class="app-title" data-i18n="hs.a3.title">Kartu Nama Eksekutif</div><div class="app-text" data-i18n="hs.a3.text">Hot stamping pada kartu 600gsm — kesan tak terlupakan.</div></div>
+    <div class="app-item reveal"><div class="app-num">04</div><div class="app-title" data-i18n="hs.a4.title">Packaging Wine &amp; Spirits</div><div class="app-text" data-i18n="hs.a4.text">Label botol dengan foil untuk brand premium.</div></div>
+    <div class="app-item reveal reveal-delay-1"><div class="app-num">05</div><div class="app-title" data-i18n="hs.a5.title">Sertifikat &amp; Penghargaan</div><div class="app-text" data-i18n="hs.a5.text">Emblem emas yang memberikan bobot resmi dan prestisius.</div></div>
+    <div class="app-item reveal reveal-delay-2"><div class="app-num">06</div><div class="app-title" data-i18n="hs.a6.title">Fashion &amp; Aksesoris</div><div class="app-text" data-i18n="hs.a6.text">Foil untuk tag mewah dan packaging fashion.</div></div>
+  </div>
+</section>
+
+<div class="cta-banner">
+  <div class="cta-banner-content">
+    <h2 class="reveal" data-i18n-html="hs.cta.title">Siap Membuat Cetakan<br><em>Hot Stamping</em> Anda?</h2>
+    <p class="reveal reveal-delay-1" data-i18n="hs.cta.desc">Upload file dan analisis teknis gratis dalam 24 jam.</p>
+    <a href="kontak.html" class="btn-cta-white reveal reveal-delay-2" data-i18n="hs.cta.btn">Minta Analisis Gratis →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div><div class="footer-brand-name">Precision Brass Craft</div><div class="footer-brand-tagline" data-i18n="footer.tagline">Dimana Seni Bertemu Presisi Mutlak</div><p class="footer-brand-desc" data-i18n="footer.desc">Manufaktur spesialis Hot Stamping dan Embossing sejak 2008.</p></div>
+    <div><div class="footer-col-title" data-i18n="footer.services">Layanan</div><ul class="footer-links"><li><a href="hot-stamping.html" data-i18n="nav.hotStamp">Hot Stamping</a></li><li><a href="embossing.html" data-i18n="nav.embossing">Embossing</a></li><li><a href="kontak.html" data-i18n="footer.consult">Konsultasi</a></li></ul></div>
+    <div><div class="footer-col-title" data-i18n="footer.company">Perusahaan</div><ul class="footer-links"><li><a href="../index.html" data-i18n="footer.home">Beranda</a></li><li><a href="kontak.html" data-i18n="footer.contactL">Kontak</a></li></ul></div>
+    <div><div class="footer-col-title" data-i18n="footer.contact">Hubungi Kami</div><div class="footer-contact-item"><svg class="footer-contact-icon" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><div class="footer-contact-text">info@precisionbrass.id</div></div></div>
+  </div>
+  <div class="footer-bottom"><div class="footer-copy">© 2024 <span>Precision Brass Craft</span>. All rights reserved.</div><div class="footer-copy" data-i18n="footer.copy">Crafted with precision in Jakarta, Indonesia</div></div>
+</footer>
+<script src="../js/main.js"></script>
+<script src="../js/i18n.js"></script>
+<script>if(window.innerWidth<=768)document.getElementById('mobileLang').style.display='flex';</script>
+</body></html>
