@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Pesan layanan CleanPro Services - Formulir pemesanan mudah dan cepat. Tentukan jadwal, pilih layanan, dan tim kami siap hadir."/>
+  <title>Pemesanan | CleanPro Services</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%232D4A32'/><text y='.9em' font-size='60' x='18' fill='%23C9A84C'>✦</text></svg>"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon"><i class="fas fa-sparkles"></i></div>
+    <span class="nav-logo-text">Clean<span>Pro</span></span>
+  </a>
+  <ul class="nav-menu">
+    <li><a href="index.html">Beranda</a></li>
+    <li><a href="about.html">Tentang Kami</a></li>
+    <li><a href="services.html">Layanan</a></li>
+    <li><a href="pricing.html">Harga</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Kontak</a></li>
+    <li><a href="booking.html" class="nav-cta">Pesan Sekarang</a></li>
+  </ul>
+  <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<section class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Beranda</a><span class="sep">›</span> Pemesanan</div>
+  <div class="section-label">Langkah Mudah</div>
+  <h1>Pesan Layanan<br><em style="color:var(--gold);">Cleaning Sekarang</em></h1>
+  <p>Isi formulir di bawah dan tim kami akan segera mengkonfirmasi pemesanan Anda.</p>
+</section>
+
+<section class="section">
+  <div class="booking-layout">
+    <div class="booking-info">
+      <h3>Cara Memesan</h3>
+      <p>Proses pemesanan kami mudah dan cepat. Berikut langkah-langkahnya:</p>
+      <ul class="booking-steps">
+        <li class="booking-step">
+          <div class="step-num">1</div>
+          <div class="step-text"><h5>Isi Formulir</h5><p>Lengkapi data diri dan detail layanan yang dibutuhkan.</p></div>
+        </li>
+        <li class="booking-step">
+          <div class="step-num">2</div>
+          <div class="step-text"><h5>Konfirmasi</h5><p>Tim kami menghubungi Anda dalam 1–2 jam untuk konfirmasi jadwal dan harga.</p></div>
+        </li>
+        <li class="booking-step">
+          <div class="step-num">3</div>
+          <div class="step-text"><h5>Pembayaran DP</h5><p>Lakukan DP 50% untuk mengamankan jadwal Anda.</p></div>
+        </li>
+        <li class="booking-step">
+          <div class="step-num">4</div>
+          <div class="step-text"><h5>Tim Hadir</h5><p>Tim profesional kami hadir tepat waktu sesuai jadwal.</p></div>
+        </li>
+        <li class="booking-step">
+          <div class="step-num">5</div>
+          <div class="step-text"><h5>Selesai & Bayar Lunas</h5><p>Setelah selesai dan Anda puas, lakukan pelunasan pembayaran.</p></div>
+        </li>
+      </ul>
+      <div style="margin-top:28px;padding:20px;background:rgba(201,168,76,0.15);border-radius:12px;border:1px solid rgba(201,168,76,0.3);">
+        <p style="color:var(--gold-light);font-size:0.85rem;"><i class="fas fa-gift" style="margin-right:8px;"></i> <strong>Promo Pertama Kali:</strong> Diskon 15% untuk pelanggan baru yang memesan di bulan ini!</p>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <h3 style="margin-bottom:6px;">Formulir Pemesanan</h3>
+      <p style="font-size:0.88rem;margin-bottom:28px;">Semua bidang bertanda * wajib diisi untuk memproses pemesanan Anda.</p>
+      <form id="bookingForm">
+        <!-- DATA DIRI -->
+        <h4 style="font-family:'DM Sans',sans-serif;font-size:0.95rem;font-weight:600;color:var(--deep-forest);margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid var(--light-gray);">
+          <i class="fas fa-user" style="color:var(--sage);margin-right:8px;"></i> Data Diri
+        </h4>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nama Lengkap *</label>
+            <input type="text" placeholder="Nama lengkap Anda" required/>
+          </div>
+          <div class="form-group">
+            <label>Email *</label>
+            <input type="email" placeholder="email@anda.com" required/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>No. Telepon / WhatsApp *</label>
+          <input type="tel" id="bookingPhone" placeholder="+62 812-3456-7890" required/>
+        </div>
+
+        <!-- ALAMAT -->
+        <h4 style="font-family:'DM Sans',sans-serif;font-size:0.95rem;font-weight:600;color:var(--deep-forest);margin:24px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--light-gray);">
+          <i class="fas fa-map-marker-alt" style="color:var(--sage);margin-right:8px;"></i> Alamat Layanan
+        </h4>
+        <div class="form-group">
+          <label>Alamat Lengkap *</label>
+          <input type="text" placeholder="Nama jalan, nomor, RT/RW" required/>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Kelurahan / Kecamatan</label>
+            <input type="text" placeholder="Contoh: Kebayoran Baru"/>
+          </div>
+          <div class="form-group">
+            <label>Kota *</label>
+            <select required>
+              <option value="">Pilih kota...</option>
+              <option>Jakarta Pusat</option>
+              <option>Jakarta Selatan</option>
+              <option>Jakarta Barat</option>
+              <option>Jakarta Utara</option>
+              <option>Jakarta Timur</option>
+              <option>Tangerang</option>
+              <option>Tangerang Selatan</option>
+              <option>Bekasi</option>
+              <option>Depok</option>
+              <option>Bogor</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- LAYANAN -->
+        <h4 style="font-family:'DM Sans',sans-serif;font-size:0.95rem;font-weight:600;color:var(--deep-forest);margin:24px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--light-gray);">
+          <i class="fas fa-broom" style="color:var(--sage);margin-right:8px;"></i> Detail Layanan
+        </h4>
+        <div class="form-group">
+          <label>Jenis Layanan *</label>
+          <select required>
+            <option value="">Pilih layanan...</option>
+            <optgroup label="Rumah Tangga">
+              <option>Home Cleaning – Basic (Rp 150.000/sesi)</option>
+              <option>Home Cleaning – Standard (Rp 280.000/sesi)</option>
+              <option>Home Cleaning – Premium (Rp 480.000/sesi)</option>
+              <option>Deep Cleaning (mulai Rp 350.000)</option>
+              <option>Carpet & Sofa Cleaning (mulai Rp 25.000/m²)</option>
+            </optgroup>
+            <optgroup label="Komersial">
+              <option>Office Cleaning – Per Kunjungan (Rp 200.000/jam)</option>
+              <option>Office Cleaning – Kontrak Bulanan</option>
+            </optgroup>
+            <optgroup label="Spesial">
+              <option>Post-Construction Cleaning</option>
+              <option>Move-In / Move-Out Cleaning</option>
+              <option>Event Cleaning</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Tanggal Layanan *</label>
+            <input type="date" id="bookingDate" required/>
+          </div>
+          <div class="form-group">
+            <label>Waktu yang Diinginkan *</label>
+            <select required>
+              <option value="">Pilih waktu...</option>
+              <option>07:00 – 09:00 WIB</option>
+              <option>09:00 – 11:00 WIB</option>
+              <option>11:00 – 13:00 WIB</option>
+              <option>13:00 – 15:00 WIB</option>
+              <option>15:00 – 17:00 WIB</option>
+              <option>17:00 – 19:00 WIB</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Ukuran Area</label>
+            <select>
+              <option value="">Pilih ukuran...</option>
+              <option>Studio / &lt; 36 m²</option>
+              <option>36 – 60 m²</option>
+              <option>60 – 100 m²</option>
+              <option>100 – 200 m²</option>
+              <option>&gt; 200 m²</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Frekuensi</label>
+            <select>
+              <option value="">Pilih frekuensi...</option>
+              <option>Sekali (One-time)</option>
+              <option>Mingguan</option>
+              <option>Dua Minggu Sekali</option>
+              <option>Bulanan</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Catatan / Permintaan Khusus</label>
+          <textarea placeholder="Contoh: ada hewan peliharaan, area tertentu yang butuh perhatian ekstra, akses kunci, dll."></textarea>
+        </div>
+
+        <!-- PROMO -->
+        <div class="form-group">
+          <label>Kode Promo (opsional)</label>
+          <input type="text" placeholder="Masukkan kode promo jika ada"/>
+        </div>
+
+        <div style="background:rgba(107,143,113,0.08);border:1px solid rgba(107,143,113,0.2);border-radius:10px;padding:16px;margin-bottom:20px;">
+          <p style="font-size:0.82rem;color:var(--forest);"><i class="fas fa-info-circle" style="margin-right:6px;"></i> Setelah mengirim formulir, tim kami akan menghubungi Anda via WhatsApp untuk konfirmasi jadwal dan estimasi biaya dalam 1–2 jam (jam operasional).</p>
+        </div>
+
+        <button type="submit" class="form-submit" style="font-size:1rem;padding:18px;">
+          <i class="fas fa-calendar-check"></i> Kirim Permintaan Pemesanan
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING SUCCESS MODAL -->
+<div class="modal-overlay" id="bookingSuccessModal">
+  <div class="modal-box">
+    <div class="modal-icon" style="background:rgba(107,143,113,0.15);">
+      <i class="fas fa-calendar-check" style="color:var(--forest);"></i>
+    </div>
+    <h3>Pemesanan Diterima!</h3>
+    <p>Terima kasih! Tim CleanPro akan segera menghubungi Anda via WhatsApp dalam 1–2 jam untuk konfirmasi jadwal dan estimasi biaya.</p>
+    <div style="background:var(--cream);border-radius:10px;padding:16px;margin-bottom:24px;text-align:left;">
+      <p style="font-size:0.82rem;color:var(--text-mid);"><strong>Langkah selanjutnya:</strong><br>1. Tunggu konfirmasi dari tim kami<br>2. Setujui jadwal dan harga<br>3. Lakukan pembayaran DP 50%<br>4. Tim kami hadir tepat waktu 🧹</p>
+    </div>
+    <button class="btn-primary" onclick="hideModal('bookingSuccessModal')" style="width:100%;justify-content:center;">Tutup</button>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><div class="footer-logo"><div class="footer-logo-icon"><i class="fas fa-sparkles"></i></div><span class="footer-logo-text">Clean<span>Pro</span></span></div><p>Mitra terpercaya untuk kebersihan profesional sejak 2012.</p><div class="social-links"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a><a href="#" class="social-link"><i class="fab fa-instagram"></i></a><a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a></div></div>
+    <div class="footer-col"><h5>Navigasi</h5><ul><li><a href="index.html">Beranda</a></li><li><a href="about.html">Tentang Kami</a></li><li><a href="services.html">Layanan</a></li><li><a href="pricing.html">Harga</a></li><li><a href="contact.html">Kontak</a></li></ul></div>
+    <div class="footer-col"><h5>Layanan</h5><ul><li><a href="services.html">Home Cleaning</a></li><li><a href="services.html">Office Cleaning</a></li><li><a href="services.html">Deep Cleaning</a></li><li><a href="services.html">Carpet Cleaning</a></li></ul></div>
+    <div class="footer-col"><h5>Kontak</h5><ul><li><a href="#">+62 21 1234-5678</a></li><li><a href="#">hello@cleanpro.id</a></li><li><a href="#">Jl. Sudirman No.12, Jakarta</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 CleanPro Services. Seluruh hak dilindungi.</p><div style="display:flex;gap:20px;"><a href="#">Kebijakan Privasi</a><a href="#">Syarat & Ketentuan</a></div></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

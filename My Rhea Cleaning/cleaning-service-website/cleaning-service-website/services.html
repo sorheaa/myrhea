@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Layanan CleanPro Services - Home Cleaning, Office Cleaning, Deep Cleaning, Carpet Cleaning, Post-Construction, Move-In/Out Cleaning."/>
+  <title>Layanan | CleanPro Services</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%232D4A32'/><text y='.9em' font-size='60' x='18' fill='%23C9A84C'>✦</text></svg>"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .services-cat-tabs { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:40px; }
+    .cat-tab { padding:10px 22px; border-radius:30px; border:1.5px solid var(--light-gray); background:transparent; font-family:'DM Sans',sans-serif; font-size:0.88rem; font-weight:500; cursor:pointer; transition:all 0.3s; color:var(--text-mid); }
+    .cat-tab.active, .cat-tab:hover { background:var(--forest); color:var(--white); border-color:var(--forest); }
+    .service-detail-card { background:var(--white); border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--light-gray); transition:var(--transition); display:grid; grid-template-columns:1fr 1.4fr; }
+    .service-detail-card:hover { box-shadow:var(--shadow-md); border-color:transparent; }
+    .service-detail-img { width:100%; height:100%; object-fit:cover; min-height:280px; }
+    .service-detail-body { padding:36px; }
+    .service-includes { list-style:none; margin:16px 0 24px; display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+    .service-includes li { display:flex; align-items:center; gap:8px; font-size:0.85rem; color:var(--text-mid); }
+    .service-includes li i { color:var(--sage); font-size:12px; }
+    @media(max-width:768px){ .service-detail-card{ grid-template-columns:1fr; } .service-includes{ grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon"><i class="fas fa-sparkles"></i></div>
+    <span class="nav-logo-text">Clean<span>Pro</span></span>
+  </a>
+  <ul class="nav-menu">
+    <li><a href="index.html">Beranda</a></li>
+    <li><a href="about.html">Tentang Kami</a></li>
+    <li><a href="services.html">Layanan</a></li>
+    <li><a href="pricing.html">Harga</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="contact.html">Kontak</a></li>
+    <li><a href="booking.html" class="nav-cta">Pesan Sekarang</a></li>
+  </ul>
+  <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<section class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Beranda</a><span class="sep">›</span> Layanan</div>
+  <div class="section-label">Apa yang Kami Tawarkan</div>
+  <h1>Layanan Cleaning<br><em style="color:var(--gold);">Komprehensif</em></h1>
+  <p>Solusi kebersihan lengkap untuk setiap kebutuhan, dari hunian pribadi hingga fasilitas komersial berskala besar.</p>
+</section>
+
+<!-- RESIDENTIAL -->
+<section class="section">
+  <div class="section-header">
+    <div class="section-label">Kategori: Rumah Tangga</div>
+    <h2>Layanan untuk <em>Hunian</em></h2>
+    <p>Buat rumah Anda menjadi surga kebersihan dengan layanan kami yang telah dipercaya ribuan keluarga.</p>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:28px;">
+    <div class="service-detail-card">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80" alt="Home Cleaning" class="service-detail-img"/>
+      <div class="service-detail-body">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
+          <div class="service-icon" style="margin-bottom:0;"><i class="fas fa-home"></i></div>
+          <span class="badge badge-green">Terpopuler</span>
+        </div>
+        <h3>Home Cleaning</h3>
+        <p style="margin:10px 0 16px;">Layanan pembersihan standar untuk seluruh area rumah. Ideal untuk perawatan rutin mingguan atau dua mingguan agar rumah selalu dalam kondisi prima.</p>
+        <ul class="service-includes">
+          <li><i class="fas fa-check-circle"></i> Pembersihan ruang tamu & kamar tidur</li>
+          <li><i class="fas fa-check-circle"></i> Pembersihan dapur & kamar mandi</li>
+          <li><i class="fas fa-check-circle"></i> Penyedotan debu & mengepel lantai</li>
+          <li><i class="fas fa-check-circle"></i> Membersihkan kaca & cermin</li>
+          <li><i class="fas fa-check-circle"></i> Membuang sampah</li>
+          <li><i class="fas fa-check-circle"></i> Merapikan tempat tidur</li>
+        </ul>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div><div class="service-price">Mulai Rp 150.000</div><span style="font-size:0.8rem;color:var(--warm-gray);">per sesi (estimasi 3-4 jam)</span></div>
+          <a href="booking.html" class="btn-primary">Pesan Sekarang</a>
+        </div>
+      </div>
+    </div>
+    <div class="service-detail-card">
+      <img src="https://images.unsplash.com/photo-1584622781564-1d987f7333c1?w=500&q=80" alt="Deep Cleaning" class="service-detail-img"/>
+      <div class="service-detail-body">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
+          <div class="service-icon" style="margin-bottom:0;"><i class="fas fa-shield-alt"></i></div>
+          <span class="badge" style="background:rgba(201,168,76,0.15);color:var(--gold);">Premium</span>
+        </div>
+        <h3>Deep Cleaning</h3>
+        <p style="margin:10px 0 16px;">Pembersihan mendalam ke setiap sudut dan celah yang jarang terjangkau. Sangat direkomendasikan untuk pembersihan berkala 3–6 bulan sekali atau sebelum/sesudah acara penting.</p>
+        <ul class="service-includes">
+          <li><i class="fas fa-check-circle"></i> Semua layanan Home Cleaning</li>
+          <li><i class="fas fa-check-circle"></i> Pembersihan di dalam lemari & laci</li>
+          <li><i class="fas fa-check-circle"></i> Sanitasi kamar mandi mendalam</li>
+          <li><i class="fas fa-check-circle"></i> Pembersihan filter AC</li>
+          <li><i class="fas fa-check-circle"></i> Pembersihan tungku dapur</li>
+          <li><i class="fas fa-check-circle"></i> Decontaminasi kuman & bakteri</li>
+        </ul>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div><div class="service-price">Mulai Rp 350.000</div><span style="font-size:0.8rem;color:var(--warm-gray);">per sesi (estimasi 6-8 jam)</span></div>
+          <a href="booking.html" class="btn-primary">Pesan Sekarang</a>
+        </div>
+      </div>
+    </div>
+    <div class="service-detail-card">
+      <img src="https://images.unsplash.com/photo-1558618047-f4e6dfb29ea9?w=500&q=80" alt="Carpet Cleaning" class="service-detail-img"/>
+      <div class="service-detail-body">
+        <div style="margin-bottom:12px;"><div class="service-icon" style="margin-bottom:0;display:inline-flex;"><i class="fas fa-broom"></i></div></div>
+        <h3>Carpet & Sofa Cleaning</h3>
+        <p style="margin:10px 0 16px;">Teknologi steam cleaning dan dry cleaning terkini untuk karpet, sofa, kursi, dan kain pelapis furniture. Efektif membasmi tungau, bakteri, dan noda membandel.</p>
+        <ul class="service-includes">
+          <li><i class="fas fa-check-circle"></i> Steam cleaning karpet area</li>
+          <li><i class="fas fa-check-circle"></i> Pembersihan sofa & kursi</li>
+          <li><i class="fas fa-check-circle"></i> Penghilang noda khusus</li>
+          <li><i class="fas fa-check-circle"></i> Desinfeksi anti-tungau</li>
+          <li><i class="fas fa-check-circle"></i> Deodorizing & parfum segar</li>
+          <li><i class="fas fa-check-circle"></i> Pengeringan cepat</li>
+        </ul>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div><div class="service-price">Mulai Rp 25.000/m²</div><span style="font-size:0.8rem;color:var(--warm-gray);">Sofa mulai Rp 75.000/seat</span></div>
+          <a href="booking.html" class="btn-primary">Pesan Sekarang</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMERCIAL -->
+<section class="section section-alt">
+  <div class="section-header">
+    <div class="section-label">Kategori: Komersial</div>
+    <h2>Layanan untuk <em>Bisnis & Perkantoran</em></h2>
+    <p>Lingkungan kerja yang bersih meningkatkan produktivitas dan citra profesional bisnis Anda.</p>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:28px;">
+    <div class="service-detail-card">
+      <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&q=80" alt="Office Cleaning" class="service-detail-img"/>
+      <div class="service-detail-body">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
+          <div class="service-icon" style="margin-bottom:0;"><i class="fas fa-building"></i></div>
+          <span class="badge badge-green">Tersedia Kontrak</span>
+        </div>
+        <h3>Office Cleaning</h3>
+        <p style="margin:10px 0 16px;">Layanan kebersihan perkantoran komprehensif. Tersedia untuk pembersihan harian, mingguan, atau berdasarkan kontrak bulanan dengan tim yang terdedikasi.</p>
+        <ul class="service-includes">
+          <li><i class="fas fa-check-circle"></i> Pembersihan meja & workstation</li>
+          <li><i class="fas fa-check-circle"></i> Sanitasi toilet & pantry</li>
+          <li><i class="fas fa-check-circle"></i> Pembersihan ruang rapat</li>
+          <li><i class="fas fa-check-circle"></i> Pengelolaan sampah office</li>
+          <li><i class="fas fa-check-circle"></i> Pembersihan kaca & partisi</li>
+          <li><i class="fas fa-check-circle"></i> Laporan kebersihan rutin</li>
+        </ul>
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div><div class="service-price">Mulai Rp 200.000/jam</div><span style="font-size:0.8rem;color:var(--warm-gray);">Atau hubungi untuk paket kontrak</span></div>
+          <a href="booking.html" class="btn-primary">Dapatkan Penawaran</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPECIAL -->
+<section class="section">
+  <div class="section-header">
+    <div class="section-label">Kategori: Spesial</div>
+    <h2>Layanan <em>Khusus</em></h2>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=500&q=80" alt="Post Construction" class="service-card-img"/>
+      </div>
+      <div class="service-card-body">
+        <div class="service-icon"><i class="fas fa-hard-hat"></i></div>
+        <h3>Post-Construction Cleaning</h3>
+        <p>Pembersihan pasca renovasi atau konstruksi. Kami bersihkan debu semen, cat, dan sisa material bangunan secara profesional.</p>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:16px;">
+          <div class="service-price">Mulai Rp 5.000 <span>/ m²</span></div>
+          <a href="booking.html" class="btn-primary" style="padding:8px 18px;font-size:0.82rem;">Pesan</a>
+        </div>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1590479773265-7464e5d48118?w=500&q=80" alt="Move In Out" class="service-card-img"/>
+      </div>
+      <div class="service-card-body">
+        <div class="service-icon"><i class="fas fa-truck-moving"></i></div>
+        <h3>Move-In / Move-Out Cleaning</h3>
+        <p>Pastikan hunian baru Anda benar-benar siap ditempati, atau tinggalkan properti lama dalam kondisi sempurna.</p>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:16px;">
+          <div class="service-price">Mulai Rp 400.000 <span>/ unit</span></div>
+          <a href="booking.html" class="btn-primary" style="padding:8px 18px;font-size:0.82rem;">Pesan</a>
+        </div>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="service-card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1550133730-695473e544be?w=500&q=80" alt="Event Cleaning" class="service-card-img"/>
+      </div>
+      <div class="service-card-body">
+        <div class="service-icon"><i class="fas fa-calendar-star"></i></div>
+        <h3>Event Cleaning</h3>
+        <p>Layanan pembersihan sebelum dan sesudah event, pesta, atau acara pernikahan. Tim kami siap bekerja cepat dan efisien.</p>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:16px;">
+          <div class="service-price">Hubungi kami <span>untuk penawaran</span></div>
+          <a href="contact.html" class="btn-primary" style="padding:8px 18px;font-size:0.82rem;">Tanya</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <h2>Tidak Menemukan <em style="color:var(--gold);">Layanan yang Tepat?</em></h2>
+  <p>Ceritakan kebutuhan Anda kepada kami. Kami siap menyusun paket layanan yang sesuai persis dengan situasi Anda.</p>
+  <div class="cta-actions">
+    <a href="contact.html" class="btn-gold"><i class="fas fa-comments"></i> Konsultasi Gratis</a>
+    <a href="pricing.html" class="btn-secondary" style="border-color:rgba(255,255,255,0.3);color:var(--white);">Lihat Paket Harga</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <div class="footer-logo-icon"><i class="fas fa-sparkles"></i></div>
+        <span class="footer-logo-text">Clean<span>Pro</span></span>
+      </div>
+      <p>Mitra terpercaya untuk kebersihan profesional sejak 2012.</p>
+      <div class="social-links">
+        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="footer-col"><h5>Navigasi</h5><ul>
+      <li><a href="index.html">Beranda</a></li><li><a href="about.html">Tentang Kami</a></li>
+      <li><a href="services.html">Layanan</a></li><li><a href="pricing.html">Harga</a></li>
+      <li><a href="contact.html">Kontak</a></li><li><a href="booking.html">Pemesanan</a></li>
+    </ul></div>
+    <div class="footer-col"><h5>Layanan</h5><ul>
+      <li><a href="#">Home Cleaning</a></li><li><a href="#">Office Cleaning</a></li>
+      <li><a href="#">Deep Cleaning</a></li><li><a href="#">Carpet Cleaning</a></li>
+      <li><a href="#">Post-Construction</a></li><li><a href="#">Move-In/Out</a></li>
+    </ul></div>
+    <div class="footer-col"><h5>Kontak</h5><ul>
+      <li><a href="#">+62 21 1234-5678</a></li><li><a href="#">hello@cleanpro.id</a></li>
+      <li><a href="#">Jl. Sudirman No.12, Jakarta</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 CleanPro Services. Seluruh hak dilindungi.</p>
+    <div style="display:flex;gap:20px;"><a href="#">Kebijakan Privasi</a><a href="#">Syarat & Ketentuan</a></div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
